@@ -56,8 +56,13 @@ class MainActivity : AppCompatActivity() {
 
             override fun onSuccess(statusCode: Int, headers: Headers, json: JSON) {
                 Log.i(TAG, "Successfully fetched articles: $json")
+                val aaronTAG = "JSON TAG"
+                var jsonTemp = json.toString()
+                Log.v(aaronTAG, jsonTemp)
+
                 try {
-                    // TODO: Create the parsedJSON
+
+                // TODO: Create the parsedJSON
 
                     // TODO: Do something with the returned json (contains article information)
 
